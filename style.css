@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#picture{
+  display: grid;
+  gap: 30px;
+}
+#picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.deleteButton{
+  padding: 2px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 14px; 
+  width: 20%; 
+  cursor: pointer;
+  border-radius:20px;
+}
+.deleteButton:hover{
+  background-color: lightblue;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  #picture{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  #picture{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
